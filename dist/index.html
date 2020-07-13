@@ -15,7 +15,20 @@
     <div id="recipes-data"></div>
 
     <script id="recipes-template" type="text/x-handlebars-template">
-    
+            {{#each this}}
+              <div data-id='{{id}}'>
+                <a href={{href}}>
+                  {{title}}
+                </a>
+                <ul>
+                  {{#each ingredients}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <img src="{{thumbnail}}"/>
+                </div>
+            {{/each}}
+          </script>
     
     
     

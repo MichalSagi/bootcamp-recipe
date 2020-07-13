@@ -7,7 +7,6 @@ $('#btnSearch').on('click',function() {
     let input = $("input").val();
     $.get(`/recipes/${input}`, function(data) {
         recipesView.push(data)
-    
-    //   renderRecipes(data);
+      r.render(data);
     });
   });

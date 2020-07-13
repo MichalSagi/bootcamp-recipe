@@ -16,7 +16,6 @@ router.get("/recipes/:ingredient", function(request, response) {
         console.log(err);
       }
       const resData = JSON.parse(data.toString()).results;
-      console.log(resData);
       recipesView = resData.map(
         r =>
           (r = {
