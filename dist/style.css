@@ -1,9 +1,36 @@
-#recipes-template {
-    display: grid;
-    grid-template-columns: repeat(2 1fr)
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #a6ece0;
+}
+
+#recipes-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  justify-items: stretch;
+}
+.recipes {
+  display: grid;
+  justify-items: center;
+  align-content: baseline;
+  grid-gap: 1%;
+  border: 1px solid #4e6e58;
+}
+.recipes:hover img {
+  height: 300px;
+}
+
+#ingredient {
+  /* display: block; */
+  display: flex;
+  
+  justify-content:center;
+  height: 30px;
 }
 
 img {
-    height: 100px;
-    width: auto;
+  height: 200px;
+  width: auto;
+  align-self: center;
+  margin: 3%;
 }
